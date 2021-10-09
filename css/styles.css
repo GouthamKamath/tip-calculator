@@ -1,0 +1,226 @@
+:root{
+    --primary-color: hsl(183, 100%, 15%);
+    --hover-color:  hsl(172, 67%, 45%);
+    --light-color: hsl(186, 14%, 43%);
+    --background: rgba(156, 215, 238, 0.87);
+    --input-box: hsl(189, 41%, 97%);
+    --font: 'Space Mono';
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+body{
+    background-color: var(--background);
+    font-family: var(--font),sans-serif;
+    
+    overflow-y: hidden;
+
+}
+h2{
+    position: relative;
+    left: 550px;
+    top: 120px;
+}
+/* classes */
+.header-part-2{
+    position: relative;
+    top: 20px;
+    right: 60px;
+}
+
+/* tip container box */
+.tip-container{
+    background: white;
+    border-radius: 20px;
+    font-size: 12px;
+    height: 350px;
+    margin: 0px auto;
+    position: absolute;
+    top: 225px;
+    left: 300px;
+    width: 50%;
+}
+/* options container box */
+.options-container{
+    left: 15px;
+    line-height: 25px;
+    margin: 0px 5px;
+    max-height: 100%;
+    max-width: 60%;
+    padding: 15px;
+    position: absolute;
+    top: 10px;
+    width: 40%;
+}
+
+.options-container input{
+    margin-bottom: 25px;
+}
+
+.options-container button{
+    border-radius: 5px;
+    background: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    font-family: var(--font),sans-serif;
+    font-weight: 700;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    border: none;
+    width: 80px;
+}
+.options-container button:hover{
+    background: var(--hover-color);
+}
+.options-container button:focus{
+    outline: none;
+}
+ /* bill and number of people input */
+ .bill, .people-count{
+     background: url(/images/icon-dollar.svg) no-repeat scroll 7px 7px;
+     background-color: var(--input-box);
+     border: none;
+     font-family: var(--font),sans-serif;
+     font-weight: 700;
+     height: 30px;
+     text-align: right;
+     width: 80%;
+     padding-left:30px;
+    }
+.people-count{
+    background: url(/images/icon-person.svg) no-repeat scroll 7px 7px;
+    background-color: var(--input-box);
+}
+
+ .bill:focus{
+     outline-color: var(--hover-color);
+ }
+ .people-count:focus{
+    outline-color: var(--hover-color);
+}
+
+/* custom input element */
+#custom{
+    background: var(--input-box);
+    border: none;
+    border-radius: 5px;
+    font-family: var(--font),sans-serif;
+    font-weight: 700;
+    height:30px;
+    padding: 0;
+    text-align: center;
+    width: 80px;
+}
+
+/* select-tip label */
+.select-tip{
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+/* Results container box */
+.results-container{
+    background: var(--primary-color);
+    border-radius: 10px;
+    color: white;
+    height: 280px;
+    left: 350px;
+    padding: 10px;
+    position: relative;
+    top: 25px;
+    width: 40%;
+}
+
+/* tip and total text */
+.tip,.total{
+    font-weight: 400;
+    left: 20px;
+    position: relative;
+}
+
+.tip p:nth-child(2),.total p:nth-child(2){
+    color: rgb(177, 174, 174);
+}
+/* calculated tip and total amounts */
+.tip-amount{
+    color: var(--hover-color);
+    height: 10px;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 15px auto;
+    position: absolute;
+    top: 0px;
+    left: 150px;
+    bottom: 20px;
+}
+.total-amount{
+    color: var(--hover-color);
+    height: 10px;
+    font-weight: 700;
+    font-size: 30px;
+    position: absolute;
+    top: 50px;
+    left: 150px;
+}
+
+/* reset button */
+.reset{
+    background: var(--hover-color);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font), sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    height: 30px;
+    left: 25px;
+    margin: 10px auto;
+    position: relative;
+    top: 100px;
+    width: 80%;
+}
+
+.reset:hover{
+    background: aqua;
+}
+
+.reset:focus{
+    outline: none;
+}
+
+/* Media queries */
+/* On screens that are 600px wide or less */
+@media screen and (max-width: 600px) {
+    h2{
+        margin: 0;
+        top: 0px;
+        left: 40%;
+    }
+    .tip-container{
+        height: 100%;
+        left: 0px;
+        margin: 0px 0px;
+        top: 75px;
+        width: 100%;
+    }
+    .options-container{
+        position: relative;
+        left: 50px;
+        width: 75%;
+    }
+    .options-container button{
+        width: 90px;
+    }
+    .results-container{
+        left: 25px;
+        height: 25%;
+        width: 80%;
+    }
+    .reset{
+        top: 10px;
+    }
+}
