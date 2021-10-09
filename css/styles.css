@@ -87,7 +87,7 @@ h2{
 
  /* bill and number of people input */
  .bill, .people-count{
-     background: url(/images/icon-dollar.svg) no-repeat scroll 7px 7px;
+     background: url(images/icon-dollar.svg) no-repeat scroll 7px 7px;
      background-color: var(--input-box);
      border: none;
      font-family: var(--font),sans-serif;
@@ -98,7 +98,7 @@ h2{
      padding-left:30px;
     }
 .people-count{
-    background: url(/images/icon-person.svg) no-repeat scroll 7px 7px;
+    background: url(images/icon-person.svg) no-repeat scroll 7px 7px;
     background-color: var(--input-box);
 }
 
