@@ -17,6 +17,7 @@ body{
     font-family: var(--font),sans-serif;
     
     overflow-y: hidden;
+    overflow-x: hidden;
 
 }
 h2{
@@ -59,6 +60,10 @@ h2{
 .options-container input{
     margin-bottom: 25px;
 }
+.active-btn{
+    color: blue;
+    background: var(--hover-color);
+}
 
 .options-container button{
     border-radius: 5px;
@@ -79,6 +84,7 @@ h2{
 .options-container button:focus{
     outline: none;
 }
+
  /* bill and number of people input */
  .bill, .people-count{
      background: url(/images/icon-dollar.svg) no-repeat scroll 7px 7px;
